@@ -20,7 +20,8 @@
 		out.print("하나의 요청 속성 : " + request.getAttribute("name")+"<br>");
 		out.print("하나의 세션 속성 : " + session.getAttribute("name")+"<br>");
 		out.print("하나의 애플리케이션 속성 : " + application.getAttribute("name")+"<br>");
-		//request.getRequestDispathcer("secondPage.jsp").forward(request, response);
+		request.getRequestDispatcher("secondPage.jsp").forward(request, response);
+		//response.sendRedirect()	//request값을 넘겨줄 수 없음
 	%>
 	<a href="secondPage.jsp">secondPage</a>
 </body>
