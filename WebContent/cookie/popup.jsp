@@ -9,6 +9,7 @@
 	<script type="text/javascript">
 		function winclose(){
 			window.close();
+			
 			<%
 				Cookie cookie = new Cookie("testCookie", "myCookie");
 				response.addCookie(cookie);
