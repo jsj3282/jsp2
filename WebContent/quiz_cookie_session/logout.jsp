@@ -6,14 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>logout.jsp<br>
+<body>
 	<%
 		session.invalidate();
 	%>
-	<script type="text/javascript">
-		alert("로그아웃 되었습니다!!!")
-		location.href="login.jsp";
+	<script>
+	alert("로그 아웃 되었습니다.");
+	location.href="login.jsp";
 	</script>
-
 </body>
 </html>

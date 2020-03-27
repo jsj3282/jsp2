@@ -15,7 +15,10 @@
 		</tr>
 		<tr>
 			<td><a href="post.jsp">안녕하세요</a></td>
-			<td><%= request.getParameter("number") %></td>
+			<td>
+				<% if(application.getAttribute("cnt")==null) {%> 0
+				<%}else{%><%=application.getAttribute("cnt")%><% }%>
+			</td>
 		</tr>
 	</table>
 	</form>

@@ -6,14 +6,14 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>logout.jsp<br>
+<body>
 	<%
-		session.invalidate();
+		Cookie cookie = new Cookie("myCookie", "myCookie");
+		cookie.setMaxAge(5);
+		response.addCookie(cookie);
 	%>
-	<script type="text/javascript">
-		alert("로그아웃 되었습니다!!!")
-		location.href="login.jsp";
+	<script>
+		window.close();
 	</script>
-
 </body>
 </html>

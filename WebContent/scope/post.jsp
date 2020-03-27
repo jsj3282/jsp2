@@ -7,14 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<script>
-		out.print("<h1>" + "게시글 입니다" + "</h1>");
-	
-	</script>
 	<%
-		int number = 1;
-		application.setAttribute("name", "application man");
-		
+		String count = (String)application.getAttribute("cnt");
+		int c = 1;
+		if(count==null){
+			application.setAttribute("cnt", c+"");
+		}else{
+			c = Integer.parseInt(count);
+			c++;
+			application.setAttribute("cnt", c+"");
+		}
 	%>
 	<h1>게시글 입니다</h1>
 	<h3>공지사항 입니다</h3>

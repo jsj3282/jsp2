@@ -13,7 +13,10 @@
 		}
 		String nick = (String)session.getAttribute("loginUser");
 	%>
-	<%=nick %>님 환영합니다<br>
+	<%=nick %>님 안녕하세요!<br>
+	저희 홈페이지에 방문해 주셔서 감사합니다.
+	즐거운 시간 되세요~
 	<a href="logout.jsp">로그아웃</a>
+	<a href="door.jsp">로그인페이지</a>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>login.jsp<br>
+<body><!-- login.jsp<br>-->
 	<form action="chkUser.jsp" method="post">
 		<input type="text" name="id" placeholder="아이디"><br>
 		<input type="text" name="pwd" placeholder="비 번"><br>

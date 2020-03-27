@@ -11,9 +11,9 @@
 		String id = "1", pwd="1", nickName="홍길동";
 		if(id.equals(request.getParameter("id"))&&pwd.equals(request.getParameter("pwd"))){
 			session.setAttribute("loginUser", nickName);
-			response.sendRedirect("main.jsp");
+			response.sendRedirect("door2.jsp");
 		}else{
-			response.sendRedirect("login.jsp");
+			response.sendRedirect("door.jsp");
 		}
 	
 	%>

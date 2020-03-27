@@ -6,14 +6,16 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>main.jsp<br>
+<body>
+	<%@include file="index.jsp" %>	
 	<%
 		if((String)session.getAttribute("loginUser")==null){
 			response.sendRedirect("login.jsp");
 		}
 		String nick = (String)session.getAttribute("loginUser");
 	%>
-	<%=nick %>님 환영합니다<br>
-	<a href="logout.jsp">로그아웃</a>
+	<%=nick %>님 로그인 상태입니다<br>
+	<input type="button" onclick="location.href='main.jsp';" value="main이동">
+	
 </body>
 </html>
